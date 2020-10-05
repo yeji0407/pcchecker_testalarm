@@ -1,8 +1,10 @@
-9f71f899f7182350cecddcdba6e15a4e  usr/bin/pcchecker_asroot
-13083ffd9e21e34e956a527c7572a02c  usr/bin/pcchecker
+b6e62a68cc85fa6adcfc80fa0e192367  usr/bin/pcchecker_asroot
+880f0c708ddf369070c32a82d0d187c7  usr/bin/pcchecker
+cd69e5925bee632cf3ac4e57f8e39af7  usr/bin/test_on_calendar.sh
+d7491f0253a6dafb959acebbee4163a4  usr/bin/notify
 bd4befa9cf173cec77609d3a57b1217c  usr/share/applications/pcchecker.desktop
 14ffd36d3e0d09239ef615dfd8aada3a  usr/share/icons/hicolor/256x256/apps/pc_icon.png
 5516f2579731a907a1660ee9ccbafaf6  usr/share/icons/hicolor/256x256/apps/pc_upgrade.png
-13822f9f62e5ff53b8da075fbaff0634  usr/share/icons/hicolor/256x256/apps/pcchecker.png
 53125685e4d01781e2141aff2e4e2305  usr/share/icons/hicolor/256x256/apps/pc_refresh.png
 f01718e4e715aec948de5c9319537b2f  usr/share/icons/hicolor/256x256/apps/pccheckericon.png
+13822f9f62e5ff53b8da075fbaff0634  usr/share/icons/hicolor/256x256/apps/pcchecker.png
