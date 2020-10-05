@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+import getpass
+import gi
+import subprocess
+import time
+import os
+#import notify2
+
+subprocess.call('notify-send n', shell=True)
