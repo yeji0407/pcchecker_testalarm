@@ -1,7 +1,7 @@
 b6e62a68cc85fa6adcfc80fa0e192367  usr/bin/pcchecker_asroot
-d0fc9b90d17f373bfcc45af1c024f7cc  usr/bin/pcchecker
+6eb4ffec87d1c2e59fd0c4f57df9cd54  usr/bin/pcchecker
 d6eb17596df3bc353a1380222f227632  usr/bin/test_on_calendar.sh
-a1a28cbdb7e3c2bd010688cdc11e87bc  usr/bin/notify
+95cc3923d90de966978207c6646b9788  usr/bin/notify
 bd4befa9cf173cec77609d3a57b1217c  usr/share/applications/pcchecker.desktop
 14ffd36d3e0d09239ef615dfd8aada3a  usr/share/icons/hicolor/256x256/apps/pc_icon.png
 5516f2579731a907a1660ee9ccbafaf6  usr/share/icons/hicolor/256x256/apps/pc_upgrade.png
