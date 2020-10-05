@@ -10,4 +10,7 @@ import notify2
 #subprocess.call("systemctl daemon-reload", shell=True)
 #subprocess.call("systemctl restart on-calendar.timer", shell=True)
 #subprocess.call('su $PCCHECKER_USER -c "notify-send n"', shell=True)
-subprocess.call('notify-send n', shell=True)
+display=str(subprocess.check_output("ls /tmp/.X11-unix/* | sed 's#/tmp/.X11-unix/X##' | head -n 1",shell=True).decode().strip())
+uid=str(subprocess.check_output("id -u yeji",shell=True).decode().strip())
+subprocess.call('sudo -u yeji DISPLAY='+display+' DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/'+uid+'/bus notify-send "n"', shell=True)
+#subprocess.call('sudo -u yeji DISPLAY=0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send "n"', shell=True)
