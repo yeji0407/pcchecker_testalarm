@@ -4,7 +4,6 @@ import gi
 import subprocess
 import time
 import os
-import notify2
 
 try:
     gir_install = subprocess.check_output("dpkg --get-selections | grep gir1.2-appindicator3-0.1 | awk '{print $2}'", shell=True).decode().strip()

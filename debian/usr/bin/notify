@@ -1,6 +1,5 @@
 import subprocess
 from datetime import date, time, datetime
-import notify2
 
 cnt=0
 total_cnt=0
@@ -46,6 +45,10 @@ elif 60 > diff_day:
 total_score_val = round(cnt / total_cnt * 100)
 if 70 >= total_score_val:
     display = str(subprocess.check_output("ls /tmp/.X11-unix/* | sed 's#/tmp/.X11-unix/X##' | head -n 1",shell=True).decode().strip())
+    print(display)
     user = str(subprocess.check_output("who | grep '" + display + "' | awk '{print $1}' | head -n 1",shell=True).decode().strip())
+    print(user)
     uid = str(subprocess.check_output('id -u ' + user, shell=True).decode().strip())
-    subprocess.call('sudo -u ' + user + ' DISPLAY=' + display + ' DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/' + uid + '/bus notify-send "PC 상태가 위험합니다."',shell=True)
+    print(uid)
+    subprocess.call('sudo -u '+user+ ' DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/' + uid + '/bus notify-send "PC 상태가 위험합니다."',shell=True)
+    #subprocess.call('DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send "PC 상태가 위험합니다."',shell=True)
